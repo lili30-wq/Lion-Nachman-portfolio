@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lion Nachman — UX/UI & Frontend Portfolio</title>
+  <meta name="description" content="Portfolio of Lion Nachman, UX/UI Designer & Frontend Developer. Explore projects, skills, and contact information." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#top" class="brand">Lion Nachman — UX/UI & Frontend Designer</a>
+      <nav style="float:right;">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="container">
+      <h1>Hi, I’m Lion Nachman</h1>
+      <p>UX/UI Designer & Frontend Developer based in Tel Aviv. I craft pixel‑perfect, human‑centered experiences using Figma, Adobe CC, HTML/CSS/JS, and Git. Fluent in English and Hebrew, I move from research and wireframes to polished UI, motion, and production‑ready code.</p>
+      <a href="#work" class="btn">View My Work</a>
+      <a href="#contact" class="btn">Contact Me</a>
+      <a href="Lion_Nachman_CV.pdf" class="btn" target="_blank" rel="noopener">Download CV (PDF)</a>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="container">
+      <h2>Selected Work</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Alon Collection — E‑commerce UX</h3>
+          <p>Designed and tested an e‑commerce site for responsiveness and user experience. Collaborated with stakeholders to refine content and product prompts.</p>
+        </div>
+        <div class="card">
+          <h3>Keren Cohen Jewelry — Brand Website</h3>
+          <p>Developed a responsive brand site with structured workflows, product copy editing, and tested layouts for consistency and accessibility.</p>
+        </div>
+        <div class="card">
+          <h3>Even Gavish — UX & Brand Management</h3>
+          <p>Led branding and web content creation; evaluated site functionality and SEO; wrote guidelines and aligned team delivery.</p>
+        </div>
+        <div class="card">
+          <h3>Freelance Projects</h3>
+          <p>Produced testing notes and structured feedback, audited UI clarity, and created campaign visuals under strict brand guidelines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m <strong>Lion Nachman</strong> — a detail‑oriented UX/UI Designer & Frontend Developer with skills in HTML, CSS, JavaScript, Figma, Adobe CC, and Git. I specialize in building digital products, testing user experiences, and delivering pixel‑perfect design. Fluent in English and Hebrew, currently pursuing a Meta Front‑End Developer Certificate and B.A. in Visual Communication Design at Shenkar College, with additional studies in CS & Economics at the Open University.</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Lion Nachman — UX/UI Designer & Frontend Developer | <a href="mailto:lion.nachman@gmail.com">lion.nachman@gmail.com</a> | <a href="https://www.linkedin.com/in/lion-nachman" target="_blank">LinkedIn</a> | <a href="https://lionnachman.wixsite.com/protfolio" target="_blank">Portfolio</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
